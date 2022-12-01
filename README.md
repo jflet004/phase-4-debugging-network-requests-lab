@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Console returned a 500 Internal Server Error so I went to check out server terminal. Server brought up a NameError inside ToysController. Noticed to create a model, there is a typo; "Toys" was used instead of "Toy"
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: browser showed Unexpected end of JSON input. Network shows status received but no content. Checked patch controller and noticed no json was being rendered
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: Console gave me a 404 Not Found error which means it might have to do with the routing. Server terminal log confirms it. added the DELETE route inside the routes file.
